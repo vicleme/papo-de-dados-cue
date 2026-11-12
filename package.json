@@ -1,0 +1,8 @@
+{
+  "name": "papo-de-dados-cue",
+  "private": true,
+  "type": "module",
+  "scripts": { "dev": "netlify dev" },
+  "engines": { "node": ">=18" },
+  "dependencies": { "@netlify/blobs": "^11.1.9" }
+}

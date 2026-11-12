@@ -1,0 +1,63 @@
+{
+  "title": "Papo de Dados",
+  "speakers": {
+    "lucas":   { "name": "Lucas",      "color": "#2563EB" },
+    "timoteo": { "name": "Timóteo",    "color": "#EA580C" },
+    "joao":    { "name": "João Pedro", "color": "#16A34A" },
+    "ivan":    { "name": "Ivan",       "color": "#7C3AED" },
+    "victor":  { "name": "Victor F.",  "color": "#DB2777" },
+    "leme":    { "name": "Leme",       "color": "#FACC15" }
+  },
+  "blocks": [
+    { "name": "Abertura e contexto", "cues": [
+      ["lucas", "Boas-vindas e apresentação"], ["timoteo", "Título do episódio"], ["lucas", "Nuvem é prédio de servidores"],
+      ["timoteo", "Treinar é fábrica, inferir é resposta"], ["lucas", "AIE: 415 TWh em 2024, 945 em 2030"],
+      ["timoteo", "Gartner: 565 TWh, só projeção"], ["lucas", "Quem paga a conta? Chama os convidados"] ] },
+    { "name": "Perfil dos convidados", "cues": [
+      ["lucas", "Apresenta João Pedro, economista"], ["joao", "Preço e escassez explicam tudo"],
+      ["timoteo", "Apresenta Ivan, eng. ambiental"], ["ivan", "Água, energia e território"],
+      ["lucas", "Apresenta Victor F., Green AI"], ["victor", "Sem medir vira opinião"],
+      ["timoteo", "Apresenta Leme, MLOps e FinOps"], ["leme", "Quem recebe a fatura"] ] },
+    { "name": "Gancho universitário", "cues": [
+      ["lucas", "Stanford: queda de 13% no emprego jovem"], ["joao", "Insumo barato, trabalho vira decisão"],
+      ["leme", "Falta quem explique a fatura de IA"] ] },
+    { "name": "Bloco A: Quem paga?", "cues": [
+      ["lucas", "AI Index: custo caiu 280 vezes"], ["joao", "Paradoxo de Jevons e o caso Uber"],
+      ["leme", "Custo por requisição, não por modelo"], ["timoteo", "O que são GPUs?"],
+      ["joao", "Nvidia domina e dita preço"], ["timoteo", "Como a conta não explode?"],
+      ["leme", "Roteamento, cache e quantização"] ] },
+    { "name": "Bloco B: Energia e água", "cues": [
+      ["timoteo", "Como medir energia e água?"], ["victor", "Estimativas de Vries-Gao: CO2 e água"],
+      ["ivan", "Harvard: água está na usina"], ["timoteo", "A água não é gasta no prédio?"],
+      ["ivan", "Lugar importa: ONS e Aneel"], ["joao", "Escala e PUE"],
+      ["victor", "Eficiência não reduz o total: Jevons"] ] },
+    { "name": "Bloco C: Linguagem e tokens", "cues": [
+      ["timoteo", "O que é um token?"], ["victor", "Pedaço de texto, cobrança por token"],
+      ["timoteo", "O idioma entra na conta?"], ["victor", "NeurIPS: até 15 vezes mais tokens"],
+      ["leme", "Meça o seu caso antes de assinar"], ["lucas", "Educação com a IA custa dinheiro?"],
+      ["leme", "Altman e o por favor"], ["timoteo", "Data centers em países em desenvolvimento"],
+      ["ivan", "Lugar é energia, não idioma; lei Redata"] ] },
+    { "name": "Bloco D: Raciocínio e cross-fire", "cues": [
+      ["lucas", "Modelos que pensam compensam?"], ["victor", "Token Economy Score"],
+      ["leme", "Raciocínio só quando a tarefa pede"], ["timoteo", "Cross-fire: eficiência versus escala"],
+      ["joao", "Escala paga a próxima eficiência"], ["victor", "Escala sem eficiência vira conta de luz"] ] },
+    { "name": "Habilidades do futuro", "cues": [
+      ["timoteo", "Quais habilidades as empresas procuram?"], ["leme", "Custo por requisição e prompt curto"],
+      ["joao", "Dado em decisão, questionar premissas"], ["victor", "Método científico e margem de erro"],
+      ["ivan", "Medir impacto e entender a regulação"] ] },
+    { "name": "Erros comuns", "cues": [
+      ["lucas", "Qual o erro mais comum?"], ["leme", "Mais caro não é melhor"],
+      ["victor", "Acurácia como única métrica"], ["ivan", "Ignorar território e lei"],
+      ["joao", "Projeção não é certeza"] ] },
+    { "name": "Conselho de ouro", "cues": [
+      ["timoteo", "Um conselho de ouro de cada um"], ["joao", "Nicho, não preço do token"],
+      ["ivan", "Ler relatórios e a lei"], ["victor", "Replicar artigo e publicar no GitHub"],
+      ["leme", "Portfólio com antes e depois"] ] },
+    { "name": "Síntese", "cues": [
+      ["lucas", "Quatro partes da conta"], ["timoteo", "Cada resposta é um evento material"] ] },
+    { "name": "Call to action", "cues": [
+      ["lucas", "Chamada para os contatos"], ["joao", "YouTube JP Dias Economia"], ["ivan", "Instagram territorio.ivan"],
+      ["victor", "GitHub victorferreira-lab"], ["leme", "LinkedIn victorleme-finops"],
+      ["timoteo", "AI Index e encerramento"] ] }
+  ]
+}
