@@ -6,5 +6,6 @@ export const t = {
   now: 'Fala agora', yourTurn: 'É a sua vez', next: 'A seguir', start: 'Início do episódio', finished: 'Fim do episódio',
   back: 'Voltar', advance: 'Avançar', done: 'Terminei', menu: 'Menu',
   copyLink: 'Copiar link da sala', reset: 'Reiniciar do começo', leave: 'Trocar sala ou pessoa', close: 'Fechar',
+  slide: 'Slide', pullSlide: 'Puxar slide', onAir: 'No ar: slide',
   confirmReset: 'Reiniciar para o início, para todos?',
 };

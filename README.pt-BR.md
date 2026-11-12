@@ -32,6 +32,10 @@ npx serve public    # só estático: usa o modo local (abas do mesmo navegador)
 
 Edite `public/data/script.json`: troque nomes, cores (`#rrggbb`), tópicos ou adicione blocos. Evite o mesmo integrante em falas seguidas, senão serão dois toques.
 
+## Slides
+
+Uma fala pode ter um terceiro item, o número do slide a puxar quando essa fala começa: `["lucas", "Tópico", 2]` (um quarto item de texto adiciona uma observação). Os nomes dos slides ficam na lista `slides`, no topo. O palco mostra a marca `▶ Slide N` nessas falas (anterior, atual e próximas) e, na fala atual, qual slide está no ar.
+
 ## Limites
 
 O código da sala funciona como senha compartilhada: quem souber controla a sala. As atualizações chegam aos outros celulares em cerca de um segundo. A interface está só em português.

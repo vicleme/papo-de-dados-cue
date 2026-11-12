@@ -32,6 +32,10 @@ npx serve public    # static only: falls back to local mode (tabs of the same br
 
 Edit `public/data/script.json`: change names, colors (`#rrggbb`), topics or add blocks. Avoid the same speaker in consecutive turns, otherwise it takes two taps.
 
+## Slides
+
+A turn can carry a third item, the slide number to bring up when that turn starts: `["lucas", "Topic", 2]` (a fourth text item adds a note). Slide names live in the top-level `slides` list. The stage shows a `▶ Slide N` tag on those turns (previous, current and next) and, on the current turn, which slide is on air.
+
 ## Limits
 
 The room code works as a shared password: anyone who knows it can control the room. Updates reach other phones in about one second. The UI is in Portuguese only.

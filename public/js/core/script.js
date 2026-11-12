@@ -1,7 +1,11 @@
 export async function loadScript(url = './data/script.json') {
   const data = await (await fetch(url)).json();
-  const cues = data.blocks.flatMap((b) => b.cues.map(([speaker, topic]) => ({ speaker, topic, block: b.name })));
-  return { title: data.title, speakers: data.speakers, cues, total: cues.length };
+  // A cue is [speaker, topic, slide?, note?]: `slide` is the slide to bring up when that turn starts.
+  let onAir = 0;
+  const cues = data.blocks
+    .flatMap((b) => b.cues.map(([speaker, topic, slide, note]) => ({ speaker, topic, block: b.name, slide, note })))
+    .map((c) => ({ ...c, onAir: (onAir = c.slide || onAir) }));
+  return { title: data.title, speakers: data.speakers, slides: data.slides || [], cues, total: cues.length };
 }
 
 // What the screen needs for a given index: previous, current and next three.

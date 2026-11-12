@@ -1,5 +1,6 @@
 {
   "title": "Papo de Dados",
+  "slides": ["Logotipo", "Consumo dos data centers", "Logotipo", "Emprego jovem (Stanford)", "Logotipo", "Custo: 280× e Uber", "Logotipo", "Carbono e água", "Logotipo", "Tokens (Petrov)", "Logotipo", "Redata", "Logotipo", "The Reasoning Tax", "Logotipo", "Contatos e leituras"],
   "speakers": {
     "lucas":   { "name": "Lucas",      "color": "#2563EB" },
     "timoteo": { "name": "Timóteo",    "color": "#EA580C" },
@@ -10,36 +11,36 @@
   },
   "blocks": [
     { "name": "Abertura e contexto", "cues": [
-      ["lucas", "Boas-vindas e apresentação"], ["timoteo", "Título do episódio"], ["lucas", "Nuvem é prédio de servidores"],
-      ["timoteo", "Treinar é fábrica, inferir é resposta"], ["lucas", "AIE: 415 TWh em 2024, 945 em 2030"],
-      ["timoteo", "Gartner: 565 TWh, só projeção"], ["lucas", "Quem paga a conta? Chama os convidados"] ] },
+      ["lucas", "Boas-vindas e apresentação", 1], ["timoteo", "Título do episódio"], ["lucas", "Nuvem é prédio de servidores"],
+      ["timoteo", "Treinar é fábrica, inferir é resposta"], ["lucas", "AIE: 415 TWh em 2024, 945 em 2030", 2],
+      ["timoteo", "Gartner: 565 TWh, só projeção"], ["lucas", "Quem paga a conta? Chama os convidados", 3] ] },
     { "name": "Perfil dos convidados", "cues": [
       ["lucas", "Apresenta João Pedro, economista"], ["joao", "Preço e escassez explicam tudo"],
       ["timoteo", "Apresenta Ivan, eng. ambiental"], ["ivan", "Água, energia e território"],
       ["lucas", "Apresenta Victor F., Green AI"], ["victor", "Sem medir vira opinião"],
       ["timoteo", "Apresenta Leme, MLOps e FinOps"], ["leme", "Quem recebe a fatura"] ] },
     { "name": "Gancho universitário", "cues": [
-      ["lucas", "Stanford: queda de 13% no emprego jovem"], ["joao", "Insumo barato, trabalho vira decisão"],
+      ["lucas", "Stanford: queda de 13% no emprego jovem", 4], ["joao", "Insumo barato, trabalho vira decisão", 5],
       ["leme", "Falta quem explique a fatura de IA"] ] },
     { "name": "Bloco A: Quem paga?", "cues": [
-      ["lucas", "AI Index: custo caiu 280 vezes"], ["joao", "Paradoxo de Jevons e o caso Uber"],
-      ["leme", "Custo por requisição, não por modelo"], ["timoteo", "O que são GPUs?"],
+      ["lucas", "AI Index: custo caiu 280 vezes", 6], ["joao", "Paradoxo de Jevons e o caso Uber"],
+      ["leme", "Custo por requisição, não por modelo", 7], ["timoteo", "O que são GPUs?"],
       ["joao", "Nvidia domina e dita preço"], ["timoteo", "Como a conta não explode?"],
       ["leme", "Roteamento, cache e quantização"] ] },
     { "name": "Bloco B: Energia e água", "cues": [
-      ["timoteo", "Como medir energia e água?"], ["victor", "Estimativas de Vries-Gao: CO2 e água"],
+      ["timoteo", "Como medir energia e água?"], ["victor", "Estimativas de Vries-Gao: CO2 e água", 8],
       ["ivan", "Harvard: água está na usina"], ["timoteo", "A água não é gasta no prédio?"],
-      ["ivan", "Lugar importa: ONS e Aneel"], ["joao", "Escala e PUE"],
+      ["ivan", "Lugar importa: ONS e Aneel"], ["joao", "Escala e PUE", 9],
       ["victor", "Eficiência não reduz o total: Jevons"] ] },
     { "name": "Bloco C: Linguagem e tokens", "cues": [
       ["timoteo", "O que é um token?"], ["victor", "Pedaço de texto, cobrança por token"],
-      ["timoteo", "O idioma entra na conta?"], ["victor", "NeurIPS: até 15 vezes mais tokens"],
-      ["leme", "Meça o seu caso antes de assinar"], ["lucas", "Educação com a IA custa dinheiro?"],
+      ["timoteo", "O idioma entra na conta?"], ["victor", "NeurIPS: até 15 vezes mais tokens", 10],
+      ["leme", "Meça o seu caso antes de assinar", 11], ["lucas", "Educação com a IA custa dinheiro?"],
       ["leme", "Altman e o por favor"], ["timoteo", "Data centers em países em desenvolvimento"],
-      ["ivan", "Lugar é energia, não idioma; lei Redata"] ] },
+      ["ivan", "Lugar é energia, não idioma; lei Redata", 12, "na parte do Redata"] ] },
     { "name": "Bloco D: Raciocínio e cross-fire", "cues": [
-      ["lucas", "Modelos que pensam compensam?"], ["victor", "Token Economy Score"],
-      ["leme", "Raciocínio só quando a tarefa pede"], ["timoteo", "Cross-fire: eficiência versus escala"],
+      ["lucas", "Modelos que pensam compensam?", 13], ["victor", "Token Economy Score", 14],
+      ["leme", "Raciocínio só quando a tarefa pede"], ["timoteo", "Cross-fire: eficiência versus escala", 15],
       ["joao", "Escala paga a próxima eficiência"], ["victor", "Escala sem eficiência vira conta de luz"] ] },
     { "name": "Habilidades do futuro", "cues": [
       ["timoteo", "Quais habilidades as empresas procuram?"], ["leme", "Custo por requisição e prompt curto"],
@@ -56,7 +57,7 @@
     { "name": "Síntese", "cues": [
       ["lucas", "Quatro partes da conta"], ["timoteo", "Cada resposta é um evento material"] ] },
     { "name": "Call to action", "cues": [
-      ["lucas", "Chamada para os contatos"], ["joao", "YouTube JP Dias Economia"], ["ivan", "Instagram territorio.ivan"],
+      ["lucas", "Chamada para os contatos", 16], ["joao", "YouTube JP Dias Economia"], ["ivan", "Instagram territorio.ivan"],
       ["victor", "GitHub victorferreira-lab"], ["leme", "LinkedIn victorleme-finops"],
       ["timoteo", "AI Index e encerramento"] ] }
   ]
