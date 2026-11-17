@@ -6,15 +6,17 @@ import { h } from './ui/dom.js';
 import { t } from './ui/strings.js';
 
 const KEY = 'cue:session';
+const PANEL_KEY = 'cue:panel'; // per device: hidden (default) or visible side panel
 const root = document.getElementById('app');
 const saved = JSON.parse(localStorage.getItem(KEY) || '{}');
 const script = await loadScript();
-let sync, state, status = 'online', me = '', busy = false;
+let sync, state, status = 'online', me = '', busy = false, panel = localStorage.getItem(PANEL_KEY) === '1';
 
 const keepAwake = () => navigator.wakeLock?.request('screen').catch(() => {});
 document.addEventListener('visibilitychange', () => { if (!document.hidden && state) keepAwake(); });
 
-const draw = () => renderStage(root, { script, state, me, status, onAdvance: () => act('advance'), onBack: () => act('back'), onMenu: menu });
+const togglePanel = () => { panel = !panel; localStorage.setItem(PANEL_KEY, panel ? '1' : '0'); draw(); };
+const draw = () => renderStage(root, { script, state, me, status, panel, onAdvance: () => act('advance'), onBack: () => act('back'), onMenu: menu, onPanel: togglePanel });
 
 async function act(type) {
   if (busy) return;
@@ -48,7 +50,7 @@ function enter(session) {
   me = session.me;
   root.replaceChildren(h('p', { class: 'center' }, t.connecting));
   sync?.stop();
-  sync = createSync(session.room, { onState, onStatus: (s) => { status = s; if (state) draw(); } },
+  sync = createSync(session.room, { onState, onStatus: (s) => { if (s === status) return; status = s; if (state) draw(); } },
     new URLSearchParams(location.search).get('sync') || 'auto');
   sync.start();
   keepAwake();

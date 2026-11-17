@@ -36,6 +36,15 @@ Edit `public/data/script.json`: change names, colors (`#rrggbb`), topics or add 
 
 A turn can carry a third item, the slide number to bring up when that turn starts: `["lucas", "Topic", 2]` (a fourth text item adds a note). Slide names live in the top-level `slides` list. The stage shows a `▶ Slide N` tag on those turns (previous, current and next) and, on the current turn, which slide is on air.
 
+## Side panel (full lines)
+
+The **Falas** button in the header switches between two modes, saved per device (it is not synced between phones):
+
+- **Hidden** (default): the screen looks exactly as before.
+- **Visible**: the screen is split in half. The usual board on one side; on the other, the full text of the previous turn, the current one (highlighted) and the next two. On narrow portrait screens the halves stack top and bottom.
+
+The text lives in `public/data/falas.md`: a `## Block name` (same as in `script.json`) and, for each turn, a `### Speaker | topic` followed by the text, in script order. Turns without text show the topic with a notice. If an entry's speaker does not match the script, it is ignored, so someone else's lines never show up.
+
 ## Limits
 
 The room code works as a shared password: anyone who knows it can control the room. Updates reach other phones in about one second. The UI is in Portuguese only.

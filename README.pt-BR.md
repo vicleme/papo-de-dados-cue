@@ -36,6 +36,15 @@ Edite `public/data/script.json`: troque nomes, cores (`#rrggbb`), tópicos ou ad
 
 Uma fala pode ter um terceiro item, o número do slide a puxar quando essa fala começa: `["lucas", "Tópico", 2]` (um quarto item de texto adiciona uma observação). Os nomes dos slides ficam na lista `slides`, no topo. O palco mostra a marca `▶ Slide N` nessas falas (anterior, atual e próximas) e, na fala atual, qual slide está no ar.
 
+## Falas ao lado
+
+O botão **Falas** no topo alterna entre dois modos, e a escolha fica salva em cada aparelho (não sincroniza entre os celulares):
+
+- **Escondido** (padrão): a tela fica exatamente como antes.
+- **Aparente**: a tela se divide ao meio. De um lado o painel de sempre; do outro, o texto completo da fala anterior, da fala atual (em destaque) e das duas próximas. Em telas estreitas na vertical, as metades ficam uma sobre a outra.
+
+O texto fica em `public/data/falas.md`: um `## Nome do bloco` (igual ao do `script.json`) e, para cada fala, um `### Integrante | tópico` seguido do texto, na mesma ordem do roteiro. Falas sem texto mostram o tópico com um aviso. Se o integrante de uma entrada não bater com o do roteiro, ela é ignorada, para nunca aparecer a fala de outra pessoa.
+
 ## Limites
 
 O código da sala funciona como senha compartilhada: quem souber controla a sala. As atualizações chegam aos outros celulares em cerca de um segundo. A interface está só em português.
